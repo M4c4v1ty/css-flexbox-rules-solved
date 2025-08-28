@@ -11,6 +11,8 @@ body {
 }
 
 .content {
+  display: flex;
+  gap: 20px;
   padding: 30px;
 }
 
@@ -25,6 +27,9 @@ p {
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border: 1px solid #a9a9a9;
   padding: 20px;
 }
@@ -36,6 +41,8 @@ form {
 
 #sign-in,
 #sign-up {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -82,4 +89,34 @@ input[type="submit"]:hover {
 
 .form select {
   height: 30px;
+}
+
+.form-input-control{
+  display: flex;
+  flex-direction:column;
+  gap: 5px;
+
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-submit-control > a {
+  display: flex;
+  align-items:center ;
+}
+
+.form-group-horizontal-control{
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+
+}
+
+.form-group-horizontal-control > *{
+display: flex;
+flex-direction: column;
 }
